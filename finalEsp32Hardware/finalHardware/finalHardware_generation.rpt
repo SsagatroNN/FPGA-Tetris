@@ -1,0 +1,191 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/omar/Documents/IP/Information-Processing-Group-Project/finalEsp32Hardware/finalHardware.qsys --block-symbol-file --output-directory=/home/omar/Documents/IP/Information-Processing-Group-Project/finalEsp32Hardware/finalHardware --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading finalEsp32Hardware/finalHardware.qsys
+Progress: Reading input file
+Progress: Adding accelerometer_spi [altera_up_avalon_accelerometer_spi 18.0]
+Progress: Parameterizing module accelerometer_spi
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding dram [altera_avalon_new_sdram_controller 20.1]
+Progress: Parameterizing module dram
+Progress: Adding esp32_spi [altera_avalon_spi 20.1]
+Progress: Parameterizing module esp32_spi
+Progress: Adding fph2 [altera_nios_custom_instr_floating_point_2 20.1]
+Progress: Parameterizing module fph2
+Progress: Adding hex_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_0
+Progress: Adding hex_1 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_1
+Progress: Adding hex_2 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_2
+Progress: Adding hex_3 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_3
+Progress: Adding hex_4 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_4
+Progress: Adding hex_5 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_5
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 20.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding keys_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module keys_0
+Progress: Adding nios2 [altera_nios2_gen2 20.1]
+Progress: Parameterizing module nios2
+Progress: Adding sys_clk [altera_avalon_timer 20.1]
+Progress: Parameterizing module sys_clk
+Progress: Adding sys_sdram_pll [altera_up_avalon_sys_sdram_pll 18.0]
+Progress: Parameterizing module sys_sdram_pll
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: finalHardware.dram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: finalHardware.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: finalHardware.keys_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: finalHardware.sys_sdram_pll: Refclk Freq: 50.0
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/omar/Documents/IP/Information-Processing-Group-Project/finalEsp32Hardware/finalHardware.qsys --synthesis=VERILOG --output-directory=/home/omar/Documents/IP/Information-Processing-Group-Project/finalEsp32Hardware/finalHardware/synthesis --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading finalEsp32Hardware/finalHardware.qsys
+Progress: Reading input file
+Progress: Adding accelerometer_spi [altera_up_avalon_accelerometer_spi 18.0]
+Progress: Parameterizing module accelerometer_spi
+Progress: Adding clk_0 [clock_source 20.1]
+Progress: Parameterizing module clk_0
+Progress: Adding dram [altera_avalon_new_sdram_controller 20.1]
+Progress: Parameterizing module dram
+Progress: Adding esp32_spi [altera_avalon_spi 20.1]
+Progress: Parameterizing module esp32_spi
+Progress: Adding fph2 [altera_nios_custom_instr_floating_point_2 20.1]
+Progress: Parameterizing module fph2
+Progress: Adding hex_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_0
+Progress: Adding hex_1 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_1
+Progress: Adding hex_2 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_2
+Progress: Adding hex_3 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_3
+Progress: Adding hex_4 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_4
+Progress: Adding hex_5 [altera_avalon_pio 20.1]
+Progress: Parameterizing module hex_5
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 20.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding keys_0 [altera_avalon_pio 20.1]
+Progress: Parameterizing module keys_0
+Progress: Adding nios2 [altera_nios2_gen2 20.1]
+Progress: Parameterizing module nios2
+Progress: Adding sys_clk [altera_avalon_timer 20.1]
+Progress: Parameterizing module sys_clk
+Progress: Adding sys_sdram_pll [altera_up_avalon_sys_sdram_pll 18.0]
+Progress: Parameterizing module sys_sdram_pll
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: finalHardware.dram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: finalHardware.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: finalHardware.keys_0: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: finalHardware.sys_sdram_pll: Refclk Freq: 50.0
+Info: finalHardware: Generating finalHardware "finalHardware" for QUARTUS_SYNTH
+Warning: finalHardware: "No matching role found for nios2_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_ipending (ipending)"
+Warning: finalHardware: "No matching role found for nios2_custom_instruction_master_multi_xconnect:ci_slave:ci_slave_estatus (estatus)"
+Info: accelerometer_spi: Starting Generation of the Accelerometer Controller in SPI mode
+Info: accelerometer_spi: "finalHardware" instantiated altera_up_avalon_accelerometer_spi "accelerometer_spi"
+Info: dram: Starting RTL generation for module 'finalHardware_dram'
+Info: dram:   Generation command is [exec /home/omar/intelFPGA_lite/20.1/quartus/linux64/perl/bin/perl -I /home/omar/intelFPGA_lite/20.1/quartus/linux64/perl/lib -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin/europa -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=finalHardware_dram --dir=/tmp/alt9431_7301384050505527767.dir/0003_dram_gen/ --quartus_dir=/home/omar/intelFPGA_lite/20.1/quartus --verilog --config=/tmp/alt9431_7301384050505527767.dir/0003_dram_gen//finalHardware_dram_component_configuration.pl  --do_build_sim=0  ]
+Info: dram: Done RTL generation for module 'finalHardware_dram'
+Info: dram: "finalHardware" instantiated altera_avalon_new_sdram_controller "dram"
+Info: esp32_spi: Starting RTL generation for module 'finalHardware_esp32_spi'
+Info: esp32_spi:   Generation command is [exec /home/omar/intelFPGA_lite/20.1/quartus/linux64/perl/bin/perl -I /home/omar/intelFPGA_lite/20.1/quartus/linux64/perl/lib -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin/europa -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi -- /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_spi/generate_rtl.pl --name=finalHardware_esp32_spi --dir=/tmp/alt9431_7301384050505527767.dir/0004_esp32_spi_gen/ --quartus_dir=/home/omar/intelFPGA_lite/20.1/quartus --verilog --config=/tmp/alt9431_7301384050505527767.dir/0004_esp32_spi_gen//finalHardware_esp32_spi_component_configuration.pl  --do_build_sim=0  ]
+Info: esp32_spi: Done RTL generation for module 'finalHardware_esp32_spi'
+Info: esp32_spi: "finalHardware" instantiated altera_avalon_spi "esp32_spi"
+Info: fph2: "finalHardware" instantiated altera_nios_custom_instr_floating_point_2 "fph2"
+Info: hex_0: Starting RTL generation for module 'finalHardware_hex_0'
+Info: hex_0:   Generation command is [exec /home/omar/intelFPGA_lite/20.1/quartus/linux64/perl/bin/perl -I /home/omar/intelFPGA_lite/20.1/quartus/linux64/perl/lib -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin/europa -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=finalHardware_hex_0 --dir=/tmp/alt9431_7301384050505527767.dir/0005_hex_0_gen/ --quartus_dir=/home/omar/intelFPGA_lite/20.1/quartus --verilog --config=/tmp/alt9431_7301384050505527767.dir/0005_hex_0_gen//finalHardware_hex_0_component_configuration.pl  --do_build_sim=0  ]
+Info: hex_0: Done RTL generation for module 'finalHardware_hex_0'
+Info: hex_0: "finalHardware" instantiated altera_avalon_pio "hex_0"
+Info: jtag_uart_0: Starting RTL generation for module 'finalHardware_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec /home/omar/intelFPGA_lite/20.1/quartus/linux64/perl/bin/perl -I /home/omar/intelFPGA_lite/20.1/quartus/linux64/perl/lib -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin/europa -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=finalHardware_jtag_uart_0 --dir=/tmp/alt9431_7301384050505527767.dir/0006_jtag_uart_0_gen/ --quartus_dir=/home/omar/intelFPGA_lite/20.1/quartus --verilog --config=/tmp/alt9431_7301384050505527767.dir/0006_jtag_uart_0_gen//finalHardware_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'finalHardware_jtag_uart_0'
+Info: jtag_uart_0: "finalHardware" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: keys_0: Starting RTL generation for module 'finalHardware_keys_0'
+Info: keys_0:   Generation command is [exec /home/omar/intelFPGA_lite/20.1/quartus/linux64/perl/bin/perl -I /home/omar/intelFPGA_lite/20.1/quartus/linux64/perl/lib -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin/europa -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=finalHardware_keys_0 --dir=/tmp/alt9431_7301384050505527767.dir/0007_keys_0_gen/ --quartus_dir=/home/omar/intelFPGA_lite/20.1/quartus --verilog --config=/tmp/alt9431_7301384050505527767.dir/0007_keys_0_gen//finalHardware_keys_0_component_configuration.pl  --do_build_sim=0  ]
+Info: keys_0: Done RTL generation for module 'finalHardware_keys_0'
+Info: keys_0: "finalHardware" instantiated altera_avalon_pio "keys_0"
+Info: nios2: "finalHardware" instantiated altera_nios2_gen2 "nios2"
+Info: sys_clk: Starting RTL generation for module 'finalHardware_sys_clk'
+Info: sys_clk:   Generation command is [exec /home/omar/intelFPGA_lite/20.1/quartus/linux64//perl/bin/perl -I /home/omar/intelFPGA_lite/20.1/quartus/linux64//perl/lib -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin/europa -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=finalHardware_sys_clk --dir=/tmp/alt9431_7301384050505527767.dir/0008_sys_clk_gen/ --quartus_dir=/home/omar/intelFPGA_lite/20.1/quartus --verilog --config=/tmp/alt9431_7301384050505527767.dir/0008_sys_clk_gen//finalHardware_sys_clk_component_configuration.pl  --do_build_sim=0  ]
+Info: sys_clk: Done RTL generation for module 'finalHardware_sys_clk'
+Info: sys_clk: "finalHardware" instantiated altera_avalon_timer "sys_clk"
+Info: sys_sdram_pll: "finalHardware" instantiated altera_up_avalon_sys_sdram_pll "sys_sdram_pll"
+Info: nios2_custom_instruction_master_translator: "finalHardware" instantiated altera_customins_master_translator "nios2_custom_instruction_master_translator"
+Info: nios2_custom_instruction_master_comb_xconnect: "finalHardware" instantiated altera_customins_xconnect "nios2_custom_instruction_master_comb_xconnect"
+Info: nios2_custom_instruction_master_comb_slave_translator0: "finalHardware" instantiated altera_customins_slave_translator "nios2_custom_instruction_master_comb_slave_translator0"
+Info: nios2_custom_instruction_master_multi_xconnect: "finalHardware" instantiated altera_customins_xconnect "nios2_custom_instruction_master_multi_xconnect"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "finalHardware" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "finalHardware" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "finalHardware" instantiated altera_reset_controller "rst_controller"
+Info: fpci_combi: "fph2" instantiated altera_nios_custom_instr_floating_point_2_combi "fpci_combi"
+Info: fpci_multi: "fph2" instantiated altera_nios_custom_instr_floating_point_2_multi "fpci_multi"
+Info: cpu: Starting RTL generation for module 'finalHardware_nios2_cpu'
+Info: cpu:   Generation command is [exec /home/omar/intelFPGA_lite/20.1/quartus/linux64//perl/bin/perl -I /home/omar/intelFPGA_lite/20.1/quartus/linux64//perl/lib -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin/europa -I /home/omar/intelFPGA_lite/20.1/quartus/sopc_builder/bin -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- /home/omar/intelFPGA_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=finalHardware_nios2_cpu --dir=/tmp/alt9431_7301384050505527767.dir/0017_cpu_gen/ --quartus_bindir=/home/omar/intelFPGA_lite/20.1/quartus/linux64/ --verilog --config=/tmp/alt9431_7301384050505527767.dir/0017_cpu_gen//finalHardware_nios2_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2023.03.15 21:38:02 (*) Starting Nios II generation
+Info: cpu: # 2023.03.15 21:38:02 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2023.03.15 21:38:02 (*)   Creating all objects for CPU
+Info: cpu: # 2023.03.15 21:38:02 (*)   Generating RTL from CPU objects
+Info: cpu: # 2023.03.15 21:38:02 (*)   Creating plain-text RTL
+Info: cpu: # 2023.03.15 21:38:02 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'finalHardware_nios2_cpu'
+Info: cpu: "nios2" instantiated altera_nios2_gen2_unit "cpu"
+Info: sys_pll: "sys_sdram_pll" instantiated altera_up_altpll "sys_pll"
+Info: reset_from_locked: "sys_sdram_pll" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: nios2_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_data_master_translator"
+Info: accelerometer_spi_avalon_accelerometer_spi_mode_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "accelerometer_spi_avalon_accelerometer_spi_mode_slave_translator"
+Info: nios2_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_data_master_agent"
+Info: accelerometer_spi_avalon_accelerometer_spi_mode_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "accelerometer_spi_avalon_accelerometer_spi_mode_slave_agent"
+Info: accelerometer_spi_avalon_accelerometer_spi_mode_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "accelerometer_spi_avalon_accelerometer_spi_mode_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: router_005: "mm_interconnect_0" instantiated altera_merlin_router "router_005"
+Info: accelerometer_spi_avalon_accelerometer_spi_mode_slave_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "accelerometer_spi_avalon_accelerometer_spi_mode_slave_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_002"
+Info: Reusing file /home/omar/Documents/IP/Information-Processing-Group-Project/finalEsp32Hardware/finalHardware/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/omar/Documents/IP/Information-Processing-Group-Project/finalEsp32Hardware/finalHardware/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file /home/omar/Documents/IP/Information-Processing-Group-Project/finalEsp32Hardware/finalHardware/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: accelerometer_spi_avalon_accelerometer_spi_mode_slave_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "accelerometer_spi_avalon_accelerometer_spi_mode_slave_rsp_width_adapter"
+Info: Reusing file /home/omar/Documents/IP/Information-Processing-Group-Project/finalEsp32Hardware/finalHardware/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file /home/omar/Documents/IP/Information-Processing-Group-Project/finalEsp32Hardware/finalHardware/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: avalon_st_adapter_003: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_003"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_001" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_003" instantiated error_adapter "error_adapter_0"
+Info: finalHardware: Done "finalHardware" with 49 modules, 91 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

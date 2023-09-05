@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "altera_avalon_pio_regs.h": "c",
+        "freertosconfig.h": "c",
+        "system.h": "c",
+        "freertos.h": "c",
+        "task.h": "c"
+    }
+}
